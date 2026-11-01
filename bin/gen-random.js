@@ -15,7 +15,7 @@ const OUTPUT_SIZES = [
   { targetBits: 128, totalChars: 32, minRandomHexLength: 28 },
   { targetBits: 256, totalChars: 64, minRandomHexLength: 32 },
 ];
-const settingsPath = path.join(os.homedir(), '.config', 'gen-random', 'settings.json');
+const settingsPath = path.join(os.homedir(), '.config', 'gen-random-cli', 'settings.json');
 
 function isValidSettings(settings) {
   return typeof settings?.prefix === 'string'

@@ -18,6 +18,15 @@ Generated values are printed to the terminal and are not written to files by the
 npm install --global gen-random-cli
 ```
 
+This installs the commands `gen-random-cli`, `gen-random`, and `genran` locally on your system. To run a command through npm without a global install, use the explicit package option:
+
+```sh
+npx --package gen-random-cli genran --help
+```
+
+`npx genran` asks npm for the separate package named `genran`, not for a binary in `gen-random-cli`. A standalone `genran` package alias must be published separately before that exact invocation can work.
+
+
 ## Usage
 
 Print both values:
@@ -48,7 +57,7 @@ Open the interactive settings menu to change the saved prefix:
 gen-random settings
 ```
 
-Type printable ASCII characters to add to the prefix, use Backspace to remove characters, press Enter to save, or Esc to cancel. Settings are stored in `~/.config/gen-random/settings.json`.
+Type printable ASCII characters to add to the prefix, use Backspace to remove characters, press Enter to save, or Esc to cancel. Settings are stored in `~/.config/gen-random-cli/settings.json`.
 
 Show all options:
 

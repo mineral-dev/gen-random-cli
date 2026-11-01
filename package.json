@@ -1,13 +1,15 @@
 {
   "name": "gen-random-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A secure multi-length random password generator for your terminal",
   "license": "MIT",
   "engines": {
     "node": ">=22"
   },
   "bin": {
-    "gen-random": "bin/gen-random.js"
+    "gen-random-cli": "bin/gen-random.js",
+    "gen-random": "bin/gen-random.js",
+    "genran": "bin/gen-random.js"
   },
   "files": [
     "bin/gen-random.js",
